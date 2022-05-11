@@ -6,7 +6,7 @@ from .models import Article, Score
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ['user', 'title', 'body', 'created', 'updated']
+        fields = ['title', 'body', 'created', 'updated']
 
 class ScoreSerializer(serializers.ModelSerializer):
     class Meta:

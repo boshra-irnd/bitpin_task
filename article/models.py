@@ -3,7 +3,6 @@ from django.conf import settings
 
 
 class Article(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='user_article')
     title = models.CharField(max_length=250)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
