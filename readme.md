@@ -19,3 +19,13 @@ to give score
 ```
 http://127.0.0.1:8000/article_id/score
 ```
+
+Signup with email using JWT
+```
+http://127.0.0.1:8000/auth/users/
+```
+Signin using JWT
+```
+http://127.0.0.1:8000/auth/jwt/create/
+```
+Note: You must use the modheader extension
