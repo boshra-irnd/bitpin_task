@@ -9,7 +9,7 @@ class ArticleSerializer(serializers.ModelSerializer):
     your_score = serializers.SerializerMethodField(read_only=True)
     class Meta:
         model = Article
-        fields = ['title', 'body', 'created', 'updated', 'users_scored', 'average_scores', 'your_score']
+        fields = ['title', 'created', 'updated', 'users_scored', 'average_scores', 'your_score']
     
     def get_users_scored(self, article):
         user_count = article.article_score.all().count()
